@@ -56,7 +56,7 @@ public class SquareAABBDetect : MonoBehaviour
     {
         float halfSize = size / 2;
         bool xCollider = Mathf.Abs(sq1.position.x - square2.position.x) < squareSize;
-        bool xCollider = Mathf.Abs(sq1.position.y - square2.position.y) < squareSize;
+        bool yCollider = Mathf.Abs(sq1.position.y - square2.position.y) < squareSize;
 
         return xCollider && yCollider;
     }
