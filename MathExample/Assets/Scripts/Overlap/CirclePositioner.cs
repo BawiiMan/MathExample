@@ -70,5 +70,8 @@ public class CirclePositioner : MonoBehaviour
         }
         overlap.GetComponent<MeshFilter>().mesh = mesh;
         overlap.GetComponent<MeshRenderer>().material = overlapMaterial;
+
+        //내가 작성한 부분 Y축 기준 180도 회전
+        //overlap.transform.rotation = Quaternion.Euler(0, 180, 0);
     }
 }
